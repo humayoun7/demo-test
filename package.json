@@ -16,6 +16,8 @@
     "fb": "^2.0.0",
     "jwt-simple": "^0.5.1",
     "moment": "^2.20.1",
-    "mongoose": "^5.0.1"
+    "mongoose": "^5.0.1",
+    "node-fetch": "^2.1.1",
+    "node-linkedin": "^0.5.6"
   }
 }
