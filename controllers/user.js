@@ -7,4 +7,11 @@ module.exports = {
         console.log(users)
         res.render('index',{users:users})
     },
+    put: (req, res) => {
+        User.update({facebookId:req.params.userId},req.body,(err,result)=>{
+            if(err)
+                return res.send({message:"error",description:err})
+            res.send({message:'success'})
+        })
+    },
 }

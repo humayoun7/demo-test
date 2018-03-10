@@ -22,6 +22,7 @@ app.set('view engine','ejs')
 //Requests
 app.get('/', user.get)
 app.get('/api/users', user.get)
+app.put('/api/user/:userId',user.put)
 
 // to add 1000 user names
 app.get('/addpeople',facebook.getPeopleNames)
